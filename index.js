@@ -30,7 +30,7 @@ bot.on('message', function(message) {
 
     switch (args[0].toLowerCase()) {
         case "ping":
-        message.channel.send(`Pong! it took ${bot.ping}ms to send this message!`)
+        message.channel.send(`Pong! it took ${(int)bot.ping}ms to send this message!`)
         break;
 
         case "help":
