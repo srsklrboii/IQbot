@@ -12,7 +12,7 @@ bot.on('ready', () => {
 bot.on('guildMemberAdd', function(member) {
     var general = member.guild.channels.find("name", "welcome-bye")
     general.send(`Hey there ${member}! Welcome to IQhub! :tada: Make sure to read the rules ( #rules ) and learn how to get a whitelist ( #how-to-get-an-iqhub-whitelist )!`)
-    var memberrole = member.guild.roles.find("name", "Member (trusted)")
+    var memberrole = member.guild.roles.find("name", "Member")
     member.addRole(memberrole)
 })
 
